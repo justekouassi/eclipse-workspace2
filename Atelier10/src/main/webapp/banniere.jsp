@@ -1,0 +1,1 @@
+<h3>Je suis <%= request.getParameter("titre") %></h3>

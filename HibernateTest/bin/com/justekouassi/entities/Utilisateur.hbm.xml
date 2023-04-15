@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.justekouassi.entities.Utilisateur" table="T_Hibernate">
+		<id name="id" type="int" column="id">
+			<generator class="increment"/>
+		</id>
+		<property name="nom" type="string">
+			<column name="nom" sql-type="char(50)" not-null="true" />
+		</property>
+		<property name="prenom" type="string">
+			<column name="prenom" sql-type="char(50)" not-null="true" />
+		</property>
+	</class>
+</hibernate-mapping>

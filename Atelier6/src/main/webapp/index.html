@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Super formulaire</title>
+	<style>
+		form {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+	</style>
+</head>
+<body>
+	<form action="aller.do" method="post">
+		<label for="nom">Nom : </label>
+		<input type="text" name="nom"><br>
+		<label for="prenom">Prénom : </label>
+		<input type="text" name="prenom"><br>
+		
+		<label for="email">E-mail : </label>
+		<input type="email" name="email"><br>
+		<input type="radio" name="genre" value="homme">Homme<br>
+		<input type="radio" name="genre" value="femme">Femme<br>
+		<input type="submit" value="Envoyer">
+		<input type="reset" value="Effacer">
+	</form>
+</body>
+</html>
